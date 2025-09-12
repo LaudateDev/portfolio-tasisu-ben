@@ -31,22 +31,32 @@
   <body>
     <!-- 🧭 Navigation -->
     <header>
-      <nav>
-        <h1>Béni TASISU</h1>
-        <div>
-          <a href="#">CV</a> | <a href="#">Projets</a> |
-          <a href="#">Contact</a>
-        </div>
+      <h1>Béni TASISU</h1>
+      <nav class="nav-links">
+        <a href="#">CV</a> | <a href="#">Projets</a> |
+        <a href="#">Contact</a>
       </nav>
     </header>
 
     <!-- 👤 Présentation -->
-    <section id="intro">
-      <img
-        src="assets/mobile/data_center.png"
-        alt="Portrait de Béni"
-        class="portrait"
-      />
+    <section class="portrait">
+      <picture>
+        <!--profil Desktop-->
+        <source
+          media="(min-width:1025px)"
+          srcset="assets/desktop/data_center.png"
+          alt="Portrait de D"
+        />
+        <!--profil tablette-->
+        <source
+          media="(min-width:768px)"
+          srcset="assets/tablet/data_center.png"
+          alt="Portrait de T"
+        />
+        <!--profil mobile-->
+        <img src="assets/mobile/data_center.png" alt="Portrait de Béni" />
+      </picture>
+
       <h2>Hello</h2>
       <h3>À propos de moi</h3>
       <p>
