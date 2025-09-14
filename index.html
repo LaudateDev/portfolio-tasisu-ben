@@ -6,7 +6,7 @@
     <title>e-Portfolio Béni TASISU</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=roboto:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -33,53 +33,67 @@
     <header>
       <h1>Béni TASISU</h1>
       <nav class="nav-links">
-        <a href="#">CV</a> | <a href="#">Projets</a> |
-        <a href="#">Contact</a>
+        <a href="pages/cv.html">CV</a> |
+        <a href="pages/projets.html">Projets</a> |
+        <a href="pages/contact.html">Contact</a>
       </nav>
     </header>
 
     <!-- 👤 Présentation -->
-    <section class="portrait">
-      <picture>
+    <section class="hero">
+      <picture class="hero-image">
         <!--profil Desktop-->
         <source
           media="(min-width:1025px)"
-          srcset="assets/desktop/data_center.png"
-          alt="Portrait de D"
+          srcset="assets/desktop/desktop_work.png"
         />
         <!--profil tablette-->
         <source
           media="(min-width:768px)"
-          srcset="assets/tablet/data_center.png"
-          alt="Portrait de T"
+          srcset="assets/tablet/desktop_work.png"
         />
         <!--profil mobile-->
         <img src="assets/mobile/data_center.png" alt="Portrait de Béni" />
       </picture>
-
-      <h2>Hello</h2>
-      <h3>À propos de moi</h3>
-      <p>
-        Je suis Béni, un designer web passionné par l’élégance visuelle, la
-        typographie raffinée et les expériences numériques crédibles. J’aime
-        transformer les idées en interfaces claires et impactantes.
-      </p>
-      <div class="cta-buttons">
-        <a href="#cv" class="button button-yellow">CV</a>
-        <a href="#projets" class="button button-red">Projets</a>
-        <a href="#contact" class="button button-blue">Contact</a>
+      <div class="hero-right">
+        <div class="hero-text">
+          <h1>Hello</h1>
+          <h2>À propos de moi</h2>
+          <p>
+            Je suis <span class="valeur">Béni TASISU</span>, un Développeur
+            fullstack agile, je conçois des solutions web robustes et évolutives
+            en maîtrisant les technologies actuelles (HTML, CSS, JavaScript,
+            React, Node.js). Curieux et adaptable, j’innove dans un écosystème
+            numérique en constante mutation.
+          </p>
+        </div>
+        <div class="cta-buttons">
+          <a href="pages/cv.html" class="button button-yellow">CV</a>
+          <a href="pages/projets.html" class="button button-red">Projets</a>
+          <a href="pages/contact.html" class="button button-blue">Contact</a>
+        </div>
       </div>
     </section>
 
     <!-- ⚖️ Footer -->
     <footer>
-      <p>Téléphone : +243 810 959 744</p>
-      <p>Email : emmanuel.tasisu@gmail.com</p>
+      <p><span class="valeur">Téléphone</span> <br />+243 810 959 744</p>
       <p>
-        Suivez-moi : <a href="#">Instagram</a> |
-        <a href="#">LinkedIn</a>
+        <span class="valeur">Email</span><br /><a href="#"
+          ><img src="assets/social/gmail.svg" alt="gmail"
+        /></a>
+        emmanuel.tasisu@gmail.com
       </p>
-      <p>© 2025 Béni TASISU</p>
+      <p>
+        <span class="valeur">Suivez-moi</span><br /><a href="#"
+          ><img src="assets/social/instagram.svg" alt="instagram"
+        /></a>
+        <a href="#"><img src="assets/social/linkedin.svg" alt="linkedin" /></a
+        ><a href="#"><img src="assets/social/twitter.svg" alt="twitter" /></a
+        ><a href="#"><img src="assets/social/github.svg" alt="github" /></a
+        ><a href="#"><img src="assets/social/facebook.svg" alt="facebook" /></a>
+      </p>
+      <p>© 2025 by Béni TASISU</p>
     </footer>
   </body>
 </html>

@@ -1,5 +1,5 @@
 /* 1. Importation des polices */
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap");
 
 /* 2. Variables de design */
 :root {
@@ -10,7 +10,7 @@
   --color-accent-red: #e63946;
   --color-accent-blue: #2a9d8f;
   --font-title: "Montserrat", sans-serif;
-  --font-body: "Lora", serif;
+  --font-body: "Roboto", sans-serif;
 }
 
 /* 3. Reset de base */
@@ -44,6 +44,9 @@ h1 {
 h2 {
   font-size: 1.1rem;
 }
+.valeur {
+  font-weight: 700;
+}
 a {
   text-decoration: none;
 }
@@ -70,39 +73,59 @@ nav a {
   text-align: center;
 }
 
-.portrait {
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
 
 /* 6. Boutons */
+.cta-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .button {
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  border-radius: 30px;
+  display: flex; /* Ajouté */
+  justify-content: center; /* Ajouté */
+  align-items: center; /* Ajouté */
+  border-radius: 50%;
   font-family: var(--font-title);
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
   cursor: pointer;
   margin: 0.5rem 0;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  border: #000000 solid 0.1rem;
+  font-size: medium;
+  padding: 0; /* Remplace 'auto' par 0 */
 }
 
 .button-yellow {
   background-color: var(--color-accent-yellow);
-  color: #fff;
+  color: #000000;
 }
 
 .button-red {
   background-color: var(--color-accent-red);
-  color: #fff;
+  color: #000000;
 }
 
 .button-blue {
   background-color: var(--color-accent-blue);
-  color: #fff;
+  color: #000000;
 }
 
 .button:hover {
@@ -110,6 +133,22 @@ nav a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: #b3b3b8 solid 0.006rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0 1.5rem 0;
+}
+footer > p > a > img {
+  width: 1.1rem;
+  height: auto;
+  padding: 0 0.18rem;
+}
 /* Responsive tablette*/
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   h1 {
