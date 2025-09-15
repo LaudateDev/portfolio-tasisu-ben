@@ -34,7 +34,6 @@ h2,
 h3 {
   font-family: var(--font-title);
   color: var(--color-text);
-  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -169,6 +168,24 @@ footer > p > a > img:hover {
 /*Curriculum Vitae*/
 .curriculum {
   padding: 0 1rem;
+}
+.title-cv {
+  padding: 1.3rem 0;
+}
+.poste {
+  padding-bottom: 0.8rem;
+}
+
+.experience {
+  padding-bottom: 1.5rem;
+}
+.exp-pro,
+.diplome,
+.competence {
+  border-bottom: #b3b3b8 solid 0.006rem;
+}
+.competence {
+  padding-bottom: 1.5rem;
 }
 
 /* Responsive tablette*/
