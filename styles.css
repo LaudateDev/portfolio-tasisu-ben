@@ -188,6 +188,23 @@ footer > p > a > img:hover {
   padding-bottom: 1.5rem;
 }
 
+/*Projets*/
+.project {
+  margin: 1.1rem;
+}
+.picture-projet {
+  width: 435px;
+  height: auto;
+  opacity: 1;
+  top: 327px;
+  left: 38px;
+  border: 20px solid #dfdfdf;
+}
+.projet {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 /* Responsive tablette*/
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   h1 {
