@@ -89,6 +89,10 @@ nav a {
   justify-content: center;
   align-items: center;
 }
+.hero-image img {
+  width: 25rem;
+  height: auto;
+}
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -111,7 +115,6 @@ nav a {
   border-radius: 50%;
   font-family: var(--font-title);
   font-weight: 600;
-  text-transform: uppercase;
   transition: all 0.3s ease;
   cursor: pointer;
   margin: 0.5rem 0;
@@ -166,7 +169,7 @@ footer > p > a > img:hover {
   padding: 0 0.2rem;
 }
 
-/*Curriculum Vitae*/
+/*Page CV*/
 .curriculum {
   padding: 0 1rem;
 }
@@ -189,7 +192,7 @@ footer > p > a > img:hover {
   padding-bottom: 1.5rem;
 }
 
-/*Projets*/
+/*Page Projets*/
 .project {
   margin: 1.1rem;
 }
@@ -241,9 +244,50 @@ textarea:focus {
   margin-top: 1.52rem;
 }
 /* Responsive tablette*/
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .nom {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 50%;
+  }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
+  }
+  header {
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+  }
+  nav {
+    display: block;
+    font-family: var(--font-title);
+    font-weight: 400;
+    text-align: right;
+    width: 50%;
+    margin: 0;
+  }
+  nav a {
+    padding: 2rem;
+  }
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    padding: 2rem 5rem 0 5rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .hero-image img {
+    width: 25rem;
+    height: auto;
+  }
+  .hero-text {
+    text-align: left;
+    align-items: start;
+    display: initial;
+  }
+  .hero-text > h1,
+  .hero-text > h2 {
+    text-align: left;
   }
   footer {
     flex-direction: row;
@@ -261,7 +305,7 @@ textarea:focus {
     width: 50%;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   header {
     padding: 2rem;
@@ -276,17 +320,45 @@ textarea:focus {
     width: 50%;
     margin: 0;
   }
+  nav a {
+    padding: 2rem;
+  }
   .hero {
     flex-direction: row;
-    text-align: start;
-    padding: 2rem 5rem 0 5rem;
-    gap: 2rem;
-  }
+    padding: 2rem 17rem 0 12rem;
 
+    margin-bottom: 4rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-image {
+    width: 50%;
+  }
+  .hero-image img {
+    width: 25rem;
+    height: auto;
+  }
+  .hero-text {
+    text-align: left;
+    align-items: start;
+    display: initial;
+  }
+  .hero-right {
+    width: 50%;
+  }
+  .hero-text > h1,
+  .hero-text > h2 {
+    text-align: left;
+  }
   footer {
     flex-direction: row;
     text-align: start;
     align-items: start;
     line-height: 2rem;
+  }
+
+  /*Page CV*/
+  .curriculum {
+    padding: 0 5rem;
   }
 }
