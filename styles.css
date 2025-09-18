@@ -245,11 +245,48 @@ textarea:focus {
   h1 {
     font-size: 2.5rem;
   }
+  footer {
+    flex-direction: row;
+    text-align: start;
+    align-items: start;
+    line-height: 2rem;
+  }
 }
 
 /* Responsive desktop */
 @media screen and (min-width: 1024px) {
+  .nom {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 50%;
+  }
   h1 {
     font-size: 2.5rem;
+  }
+  header {
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+  }
+  nav {
+    display: block;
+    font-family: var(--font-title);
+    font-weight: 400;
+    text-align: right;
+    width: 50%;
+    margin: 0;
+  }
+  .hero {
+    flex-direction: row;
+    text-align: start;
+    padding: 2rem 5rem 0 5rem;
+    gap: 2rem;
+  }
+
+  footer {
+    flex-direction: row;
+    text-align: start;
+    align-items: start;
+    line-height: 2rem;
   }
 }
