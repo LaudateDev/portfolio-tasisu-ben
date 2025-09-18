@@ -90,7 +90,7 @@ nav a {
   align-items: center;
 }
 .hero-image img {
-  width: 25rem;
+  width: 20rem;
   height: auto;
 }
 .hero-text {
@@ -295,6 +295,31 @@ textarea:focus {
     align-items: start;
     line-height: 2rem;
   }
+  /*Page CV*/
+  .curriculum {
+    padding: 0 2.5rem;
+  }
+  /*Page Projets*/
+  .project {
+    padding-left: 2rem;
+  }
+  .title {
+    text-align: left;
+  }
+  .projet {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+  }
+  .description-projet {
+    width: 50%;
+  }
+
+  /*Page Contact*/
+  .no-phone {
+    display: block;
+  }
 }
 
 /* Responsive desktop */
@@ -360,5 +385,28 @@ textarea:focus {
   /*Page CV*/
   .curriculum {
     padding: 0 5rem;
+  }
+  /*Page Projets*/
+  .project {
+    padding-left: 2rem;
+  }
+  .title {
+    text-align: left;
+  }
+  .projet {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+  }
+  .description-projet {
+    width: 50%;
+  }
+  .image-projet {
+    width: 50%;
+  }
+  /*Page Contact*/
+  .no-phone {
+    display: block;
   }
 }
